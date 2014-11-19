@@ -1,2 +1,24 @@
 @import "compass/reset";
 @import "compass/css3";
+
+body {
+  background-image: url(/img/sunset-resized.jpg);
+  background-repeat: no-repeat
+}
+
+header {
+  float: right;
+  margin: 30px 120px;
+  button {
+    margin-left: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    text-shadow: none;
+    box-shadow: none;
+    width: 70px;
+    height: 40px;
+  }
+  a ~ a {
+    margin-left: 10px;
+  }
+}

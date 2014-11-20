@@ -79,57 +79,59 @@ header button {
   border: 1px solid white;
   width: 75px;
   height: 40px;
+  background-color: transparent;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
-/* line 18, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 header a ~ a {
   margin-left: 10px;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .agent_search .l_text {
   color: white;
   margin: 166px auto 0;
   font-size: larger;
   font-weight: bold;
 }
-/* line 31, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .agent_search .s_text {
   font-size: smaller;
   margin-top: 8px;
   color: gray;
 }
-/* line 38, ../sass/style.scss */
+/* line 40, ../sass/style.scss */
 .agent_search .search_suburb {
   text-align: center;
   margin: 15px auto 0;
 }
-/* line 41, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .agent_search .search_suburb .search_bar, .agent_search .search_suburb .search_button {
-  border: 1px solid gray;
+  border: 0 solid gray;
 }
-/* line 45, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 .agent_search .search_suburb .search_bar {
   width: 40%;
   height: 40px;
+  background-color: rgba(225, 225, 225, 0.5);
 }
-/* line 49, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .agent_search .search_suburb .search_button {
   width: 8%;
   height: 44px;
+  background-color: lightgreen;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .com_font_style, .agent_search .l_text, .agent_search .s_text {
   text-align: center;
   font-family: sans-serif;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .com_box_style, header button, .agent_search .search_suburb .search_bar, .agent_search .search_suburb .search_button {
-  background-color: transparent;
   text-shadow: none;
   box-shadow: none;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
 }

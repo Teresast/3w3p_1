@@ -3,7 +3,24 @@
 
 body {
   background-image: url(/img/sunset-resized.jpg);
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  section { 
+    ul {
+        padding-top: 200px;
+        width: 80%;
+        @extend .center;
+      li {
+          box-sizing: border-box;
+          float: left;
+          position: relative;
+          width: 25%;
+          height: 100px;
+          border: 1px solid #4c4c4c;
+        h4 {
+        }
+      }
+    }
+  }
 }
 
 header {
@@ -47,7 +64,7 @@ header {
   .search_bar {
     width: 40%;
     height: 40px;
-    background-color: rgba(225,225,225,0.5);
+    background-color: rgba(255,255,255,0.5);
   }
   .search_button {
     width: 8%;
@@ -67,4 +84,8 @@ header {
 .com_box_style {
     text-shadow: none;
     box-shadow: none;
+}
+.center {
+    margin: 0 auto;
+    text-align: center;
 }

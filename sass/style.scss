@@ -102,9 +102,12 @@ body {
 
 .how_it_works {
   margin-top: 100px;
-  width: 80%;
+  width: 100%;
+  position:relative;
   .title {
+    width: 100%;
     p {
+      width: 20%;
       text-transform:uppercase;
       @include font_style(gray, 800, 14px);
     }
@@ -116,6 +119,31 @@ body {
       border-top: 1px solid gainsboro;
       margin-top: 5px;
       margin-bottom: 20px;
+    }
+  }
+  ul {
+    margin-top: 30px;
+    &::before {
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      top:139px;
+      border-top:1px solid #ccc;
+      width: 70%;
+      @extend  .center;
+    }
+    li {
+      width: 33%;
+      float: left;
+      position: relative;
+      .number {
+        border: 1px solid gainsboro;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+      }
     }
   }
 }

@@ -65,30 +65,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 4, ../sass/style.scss */
 body {
-  background-image: url(/img/sunset-resized.jpg);
   background-repeat: no-repeat;
 }
 /* line 8, ../sass/style.scss */
-body section ul {
-  padding-top: 200px;
+body .people_list ul {
+  top: -75px;
+  position: relative;
+  padding-top: 0px;
   width: 80%;
 }
-/* line 12, ../sass/style.scss */
-body section ul li {
+/* line 14, ../sass/style.scss */
+body .people_list ul li {
+  background-color: white;
   box-sizing: border-box;
   float: left;
   position: relative;
   width: 25%;
-  height: 100px;
-  border: 1px solid #4c4c4c;
+  height: 150px;
+  border: 1px solid gainsboro;
 }
 
-/* line 26, ../sass/style.scss */
-header {
+/* line 33, ../sass/style.scss */
+.header {
+  background-image: url(/img/sunset-resized.jpg);
+}
+/* line 35, ../sass/style.scss */
+.header header {
   margin: 30px 0px 0 1088px;
 }
-/* line 28, ../sass/style.scss */
-header button {
+/* line 37, ../sass/style.scss */
+.header header button {
   margin-left: 20px;
   border: 1px solid white;
   width: 75px;
@@ -98,60 +104,63 @@ header button {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 37, ../sass/style.scss */
-header a ~ a {
+/* line 46, ../sass/style.scss */
+.header header a ~ a {
   margin-left: 10px;
 }
-
-/* line 43, ../sass/style.scss */
-.agent_search .l_text {
+/* line 51, ../sass/style.scss */
+.header .agent_search {
+  padding-bottom: 300px;
+}
+/* line 53, ../sass/style.scss */
+.header .agent_search .l_text {
   color: white;
-  margin: 166px auto 0;
+  margin: 266px auto 0;
   font-size: larger;
   font-weight: bold;
 }
-/* line 50, ../sass/style.scss */
-.agent_search .s_text {
+/* line 60, ../sass/style.scss */
+.header .agent_search .s_text {
   font-size: smaller;
   margin-top: 8px;
   color: gray;
 }
-/* line 57, ../sass/style.scss */
-.agent_search .search_suburb {
+/* line 67, ../sass/style.scss */
+.header .agent_search .search_suburb {
   text-align: center;
   margin: 15px auto 0;
 }
-/* line 60, ../sass/style.scss */
-.agent_search .search_suburb .search_bar, .agent_search .search_suburb .search_button {
+/* line 70, ../sass/style.scss */
+.header .agent_search .search_suburb .search_bar, .header .agent_search .search_suburb .search_button {
   border: 0 solid gray;
 }
-/* line 64, ../sass/style.scss */
-.agent_search .search_suburb .search_bar {
+/* line 74, ../sass/style.scss */
+.header .agent_search .search_suburb .search_bar {
   width: 40%;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-/* line 69, ../sass/style.scss */
-.agent_search .search_suburb .search_button {
+/* line 79, ../sass/style.scss */
+.header .agent_search .search_suburb .search_button {
   width: 8%;
   height: 44px;
   background-color: lightgreen;
 }
 
-/* line 79, ../sass/style.scss */
-.com_font_style, .agent_search .l_text, .agent_search .s_text {
+/* line 91, ../sass/style.scss */
+.com_font_style, .header .agent_search .l_text, .header .agent_search .s_text {
   text-align: center;
   font-family: sans-serif;
 }
 
-/* line 84, ../sass/style.scss */
-.com_box_style, header button, .agent_search .search_suburb .search_bar, .agent_search .search_suburb .search_button {
+/* line 96, ../sass/style.scss */
+.com_box_style, .header header button, .header .agent_search .search_suburb .search_bar, .header .agent_search .search_suburb .search_button {
   text-shadow: none;
   box-shadow: none;
 }
 
-/* line 88, ../sass/style.scss */
-.center, body section ul {
+/* line 100, ../sass/style.scss */
+.center, body .people_list ul {
   margin: 0 auto;
   text-align: center;
 }

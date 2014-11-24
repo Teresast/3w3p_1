@@ -3,94 +3,106 @@
 
 body {
   // background-image: url(/img/sunset-resized.jpg);
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   background-repeat: no-repeat;
-  .people_list { 
-    ul {
+}
+
+.people_list { 
+      ul {
         top: -75px;
         position: relative;
-        padding-top: 0px;
         width: 80%;
-        @extend .center;
       li {
-          background-color: white; 
-          box-sizing: border-box;
-          float: left;
-          position: relative;
-          width: 25%;
-          height: 150px;
-          border: 1px solid gainsboro;
+        background-color: white;
+        @include box-sizing(border-box);
+        float: left;
+        position: relative;
+        width: 25%;
+        height: 150px;
+        border-top: 1px solid gainsboro;
+        border-left: 1px solid gainsboro;
+        border-bottom: 1px solid gainsboro;
+        &:first-child {
+          @include border-radius(5px 0 0 5px);
+        }
+        &:last-child {
+          @include border-radius(0 5px 5px 0);
+          border-right: 1px solid gainsboro;
+        }
         h4 {
-          
+          margin-top: 40px;
+          font-size: 1.5em;
+          font-weight: bold;
         }
         span {
-
+          display: block;
+          margin-top: 20px;
         }
       }
-    }
+    }     
   }
-}
 
 .header{
-  background-image: url(/img/sunset-resized.jpg);
+  background-image: url(/img/back.jpg);
+  background-size: cover;
   header { 
-  margin: 30px 0px 0 1088px;
-  button {
-    margin-left: 20px;
-    border: 1px solid white;
-    width: 75px;
-    height: 40px;
-    background-color: transparent;
-    @include border-radius(5px);
-    @extend .com_box_style;
-  }
-  a ~ a {
-    margin-left: 10px;
-  }
-}
-
-.agent_search {
-  padding-bottom: 300px;
-  .l_text {
-  @extend .com_font_style;
-  color: white;
-  margin: 266px auto 0;
-  font-size: larger;
-  font-weight: bold;
-  }
-  .s_text{
-  @extend .com_font_style;
-  font-size: smaller;
-  margin-top: 8px;
-  color: gray;
+    margin: 30px 0px 0 1088px;
+    button {
+      margin-left: 20px;
+      border: 1px solid white;
+      width: 75px;
+      height: 40px;
+      background-color: transparent;
+      @include border-radius(5px);
+      @extend .com_box_style;
+    }
+    a ~ a {
+      margin-left: 10px;
+    }
   }
 
-  .search_suburb {
-  text-align: center;
-  margin: 15px auto 0;
-  .search_bar , .search_button{
-    @extend .com_box_style;
-    border: 0 solid gray;
-  }
-  .search_bar {
-    width: 40%;
-    height: 40px;
-    background-color: rgba(255,255,255,0.5);
-  }
-  .search_button {
-    width: 8%;
-    height: 44px;
-    background-color: lightgreen;
-  }
-  }
+  .agent_search {
+    padding-bottom: 300px;
+    .l_text {
+      @extend .com_font_style;
+      color: white;
+      margin: 266px auto 0;
+      font-size: larger;
+      font-weight: bold;
+    }
+    .s_text{
+      @extend .com_font_style;
+      font-size: smaller;
+      margin-top: 8px;
+      color: gray;
+    }
 
-}
+    .search_suburb {
+      text-align: center;
+      margin: 15px auto 0;
+      .search_bar , .search_button{
+        @extend .com_box_style;
+        border: 0 solid gray;
+      }
+      .search_bar {
+        width: 40%;
+        height: 40px;
+        background-color: rgba(255,255,255,0.5);
+      }
+      .search_button {
+        width: 8%;
+        height: 44px;
+        background-color: lightgreen;
+      }
+    }
+
+  }
 }
 
 
 
 .com_font_style {
   text-align: center;
-  font-family: sans-serif;
 }
 
 .com_box_style {
@@ -98,6 +110,7 @@ body {
     box-shadow: none;
 }
 .center {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }

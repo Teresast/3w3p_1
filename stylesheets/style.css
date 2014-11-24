@@ -63,19 +63,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+/* line 10, ../sass/style.scss */
 body {
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   background-repeat: no-repeat;
 }
 
-/* line 11, ../sass/style.scss */
+/* line 16, ../sass/style.scss */
 .people_list ul {
   top: -75px;
   position: relative;
   width: 80%;
 }
-/* line 15, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 .people_list ul li {
   background-color: white;
   -moz-box-sizing: border-box;
@@ -89,41 +89,41 @@ body {
   border-left: 1px solid gainsboro;
   border-bottom: 1px solid gainsboro;
 }
-/* line 25, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .people_list ul li:first-child {
   -moz-border-radius: 5px 0 0 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px 0 0 5px;
 }
-/* line 28, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .people_list ul li:last-child {
   -moz-border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0;
   border-radius: 0 5px 5px 0;
   border-right: 1px solid gainsboro;
 }
-/* line 32, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .people_list ul li h4 {
   margin-top: 40px;
   font-size: 1.5em;
   font-weight: bold;
 }
-/* line 37, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .people_list ul li span {
   display: block;
   margin-top: 20px;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .header {
   background-image: url(/img/back.jpg);
   background-size: cover;
 }
-/* line 48, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .header header {
   margin: 30px 0px 0 1088px;
 }
-/* line 50, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .header header button {
   margin-left: 20px;
   border: 1px solid white;
@@ -134,61 +134,86 @@ body {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 59, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .header header a ~ a {
   margin-left: 10px;
 }
-/* line 64, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .header .agent_search {
   padding-bottom: 300px;
 }
-/* line 66, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .header .agent_search .l_text {
-  color: white;
   margin: 266px auto 0;
-  font-size: larger;
+  color: white;
   font-weight: bold;
+  font-size: 20px;
 }
-/* line 73, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .header .agent_search .s_text {
-  font-size: smaller;
-  margin-top: 8px;
   color: gray;
+  font-weight: 400;
+  font-size: 10px;
 }
-/* line 80, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .header .agent_search .search_suburb {
   text-align: center;
   margin: 15px auto 0;
 }
-/* line 83, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .header .agent_search .search_suburb .search_bar, .header .agent_search .search_suburb .search_button {
   border: 0 solid gray;
 }
-/* line 87, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .header .agent_search .search_suburb .search_bar {
   width: 40%;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-/* line 92, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .header .agent_search .search_suburb .search_button {
   width: 8%;
   height: 44px;
   background-color: lightgreen;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
+.how_it_works {
+  margin-top: 100px;
+  width: 80%;
+}
+/* line 107, ../sass/style.scss */
+.how_it_works .title p {
+  text-transform: uppercase;
+  color: gray;
+  font-weight: 800;
+  font-size: 14px;
+}
+/* line 111, ../sass/style.scss */
+.how_it_works .title div {
+  width: 3%;
+  height: 3px;
+  background-color: gainsboro;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid gainsboro;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* line 123, ../sass/style.scss */
 .com_font_style, .header .agent_search .l_text, .header .agent_search .s_text {
   text-align: center;
 }
 
-/* line 108, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .com_box_style, .header header button, .header .agent_search .search_suburb .search_bar, .header .agent_search .search_suburb .search_button {
   text-shadow: none;
   box-shadow: none;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 .center {
   margin-left: auto;
   margin-right: auto;

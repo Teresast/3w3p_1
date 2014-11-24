@@ -1,8 +1,13 @@
 @import "compass/reset";
 @import "compass/css3";
 
+@mixin font_style($color, $weight, $size) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $size; 
+}
+
 body {
-  // background-image: url(/img/sunset-resized.jpg);
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   background-repeat: no-repeat;
 }
@@ -65,16 +70,12 @@ body {
     padding-bottom: 300px;
     .l_text {
       @extend .com_font_style;
-      color: white;
       margin: 266px auto 0;
-      font-size: larger;
-      font-weight: bold;
+      @include font_style(white, bold, 20px);
     }
     .s_text{
       @extend .com_font_style;
-      font-size: smaller;
-      margin-top: 8px;
-      color: gray;
+      @include font_style(gray, 400, 10px);
     }
 
     .search_suburb {
@@ -99,7 +100,25 @@ body {
   }
 }
 
-
+.how_it_works {
+  margin-top: 100px;
+  width: 80%;
+  .title {
+    p {
+      text-transform:uppercase;
+      @include font_style(gray, 800, 14px);
+    }
+    div {
+      width: 3%;
+      height: 3px;
+      background-color: gainsboro;
+      @include box-sizing(border-box);
+      border-top: 1px solid gainsboro;
+      margin-top: 5px;
+      margin-bottom: 20px;
+    }
+  }
+}
 
 .com_font_style {
   text-align: center;

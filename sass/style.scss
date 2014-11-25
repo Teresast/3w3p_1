@@ -103,7 +103,9 @@ body {
 .how_it_works {
   margin-top: 100px;
   width: 100%;
+  height: 450px;
   position:relative;
+  border-bottom: 1px solid gainsboro;  
   .title {
     width: 100%;
     p {
@@ -122,15 +124,15 @@ body {
     }
   }
   ul {
-    margin-top: 30px;
+    margin-top: 50px;
     &::before {
       content:"";
       position:absolute;
       left:0;
       right:0;
-      top:139px;
+      top:149px;
       border-top:1px solid #ccc;
-      width: 70%;
+      width: 65%;
       @extend  .center;
     }
     li {
@@ -140,9 +142,35 @@ body {
       .number {
         border: 1px solid gainsboro;
         border-radius: 100%;
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
         background-color: #fff;
+        p {
+          margin-top: 10px;
+          @include font_style(gray, 800, 18px);
+        }
+      }
+       .icon-vcard , .icon-pencil , .icon-users{
+          margin-top: 40px;
+      }
+      .icon-vcard {
+          @include font_style(#EAA861, 800, 4em);
+      }
+      .icon-pencil {
+          @include font_style(#ad9dd3, 800, 4em);
+      }
+      .icon-users {
+          @include font_style(#4d99cb, 800, 4em);
+      }
+      h3 {
+        margin-top: 20px;
+        @include font_style(#3c404d, 800, 1.2em);
+      }
+      p {
+        // padding-top: 10px;
+        @extend  .center;
+        width: 60%;
+        @include font_style(gray, 300, 1em);
       }
     }
   }

@@ -9,6 +9,19 @@
 .center {
   @include center(center);
 }
+@mixin clearfix() {
+  &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+.clearfix {
+  @include clearfix();
+}
 @mixin font_style($color, $weight, $size) {
     color: $color;
     font-weight: $weight;
@@ -30,6 +43,14 @@
       margin-top: 5px;
       margin-bottom: 20px;
     }
+}
+.underline {
+  height: 2px;
+  background-color: gainsboro;
+  @include box-sizing(border-box);
+  border-top: 1px solid gainsboro;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 .block {
   margin-top: 100px;
@@ -61,6 +82,40 @@
   @include center(center);
   width: 40%;
   @include font_style(gray, 300, 1em);
+}
+.search-group {
+    height: 50px;
+    width: 600px;
+    position: relative;
+    input {
+        height: 100%;
+        border: none;
+        line-height: 1em;
+        vertical-align: middle;
+        padding: 0 15px;
+    }
+    input[type='text'] {
+        position: absolute;
+        left: 0;
+        width: 80%;
+        background-color: rgba(lighten(#ffffff, 10%), .25);
+        @include box-sizing(border-box);
+        @include border-radius(3px 0 0 3px);
+        @include input-placeholder {
+            font-size: 1.1em;
+            color: lighten(#ffffff, 10%);
+        }
+    }
+    input[type='button'] {
+        position: absolute;
+        right: 0;
+        width: 20%;
+        color: #ffffff;
+        font-size: 1.1em;
+        background-color: darken(#94dcac, 1%);
+        @include box-sizing(border-box);
+        @include border-radius(0 3px 3px 0);
+    }
 }
 
 body {
@@ -107,7 +162,9 @@ body {
   background-image: url(/img/back.jpg);
   background-size: cover;
   header { 
-    margin: 30px 0px 0 1088px;
+    padding: 20px 0 0 80%;
+    @include font_style(white, 200, 1em);
+
     button {
       margin-left: 20px;
       border: 1px solid white;
@@ -116,6 +173,8 @@ body {
       background-color: transparent;
       @include border-radius(5px);
       @extend .com_box_style;
+      @include font_style(white, 200, 1em);
+
     }
     a ~ a {
       margin-left: 10px;
@@ -134,25 +193,26 @@ body {
       @include font_style(gray, 400, 10px);
     }
 
-    .search_suburb {
-      text-align: center;
-      margin: 15px auto 0;
-      .search_bar , .search_button{
-        @extend .com_box_style;
-        border: 0 solid gray;
-      }
-      .search_bar {
-        width: 40%;
-        height: 40px;
-        background-color: rgba(255,255,255,0.5);
-      }
-      .search_button {
-        width: 8%;
-        height: 44px;
-        background-color: lightgreen;
-      }
-    }
+  }
+}
 
+.search_suburb {
+  text-align: center;
+  margin: 15px auto 0;
+  .search_bar , .search_button{
+    @extend .com_box_style;
+    border: 0 solid gray;
+  }
+  .search_bar {
+    width: 40%;
+    height: 40px;
+    background-color: rgba(255,255,255,0.5);
+  }
+  .search_button {
+    width: 8%;
+    height: 44px;
+    background-color: lightgreen;
+    @include font_style(white, 200, 1em);
   }
 }
 
@@ -204,20 +264,20 @@ body {
 
 .why_us {
  @extend .block;
+ height: 600px;
  .title {
     @include title_word;
   }
   ul {
     margin-top: 30px;
-    
     li {
       @include list_style(50%);
       margin-top: 30px;
       .icon {
-      float: left;
-      position: absolute;
-      margin-top: 24px;
-      margin-left: 138px;
+        float: left;
+        position: absolute;
+        margin-top: 24px;
+        margin-left: 138px;
       }
       .icon-checkmark {
           @include font_style(#78be93, 800, 2em);
@@ -246,6 +306,144 @@ body {
         @extend .sl_p;
         text-align:left;
       }
+    }
+  }
+}
+
+.trd_part {
+  @extend .block;
+  .testimonials, .feedback {
+    @extend .com_box_style;
+    border: 1px solid #60677a;
+    width: 150px;
+    height: 50px;
+  }
+  .testimonials {
+    background-color: #60677a;
+    @include font_style(white, 400, 1em);
+
+  }
+  .feedback {
+    background-color: white;
+    @include font_style(#60677a, 400, 1em);
+  }
+  p {
+      margin-top: 50px;
+      width: 80%;
+      @include font_style(#60677a, 400, 1.2em);
+    &::before {
+      content: "“";
+      text-align: center;
+      display: block;
+      line-height: 1em;
+      @include font_style(gainsboro, 800, 2.5em);
+    }
+  }
+  .menbers {
+    width: 40%;
+    margin-top: 2em;
+
+    li {
+      @include list_style(33.3333%);
+      .underline {
+        width: 20px;
+      }
+      .toggle {
+        visibility: hidden;
+      }
+      .face-box {
+        margin-top: 1em;
+        border: 1px solid #ccc;
+        padding: 3px;
+        height: 80px;
+        width: 80px;
+        @include border-radius(80px);
+      }
+      .face {
+        height: 80px;
+        width: 80px;
+        background-color: blue;
+        @include filter(grayscale(100%));
+        @include border-radius(80px);
+      }
+      .left_face {
+        background-image: url(/img/lufu_wanted.jpeg);
+        background-size: cover;
+      }
+      .mid_face {
+        background-image: url(/img/tong.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+      .right_face {
+        background-image: url(/img/zoro.jpg);
+        background-size: cover;
+      }
+      &:hover {
+        .toggle {
+          visibility: visible;
+        }
+        .face {
+          @include filter(grayscale(0));
+        }
+      }
+    }
+  }
+}
+
+.find-agent {
+  padding: 80px 0;
+  background-image: url(/img/back.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  >div {
+    width: 80%;  
+  }
+  label {
+    display: block;
+    height: 50px;
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding-right: 30px;
+    color: #fff;
+    font-size: 2em;
+    vertical-align: middle;
+    @include box-sizing(border-box);
+  }
+  .search-group {
+    float: left;
+    margin-top: 0;
+    width: 70%;
+    text-align: left;
+    @include box-sizing(border-box);
+  }
+}
+.footer {
+  @include border-radius(0 5px 5px 0);
+  padding: 1.5em 0;
+  width: 80%;
+  .concat {
+    float: left;
+  }
+  .icons {
+    float: right;
+  }
+  .icon-twitter {
+    @include font_style(#01b4ea, 400, 1.2em);
+  }
+  .icon-facebook {
+    @include font_style(#01b4ea, 400, 1.2em);
+  }
+  li {
+    float: left;
+    padding: 0 10px;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

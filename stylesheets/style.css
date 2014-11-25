@@ -572,12 +572,13 @@ body {
   background-size: cover;
   background-position: bottom;
   text-align: center;
+  height: 180px;
 }
-/* line 379, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .find-agent > div {
   width: 80%;
 }
-/* line 382, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .find-agent label {
   display: block;
   height: 50px;
@@ -585,6 +586,7 @@ body {
   width: 30%;
   text-align: right;
   padding-right: 30px;
+  padding-top: 70px;
   color: #fff;
   font-size: 2em;
   vertical-align: middle;
@@ -592,8 +594,9 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 394, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 .find-agent .search-group {
+  padding-top: 60px;
   float: left;
   margin-top: 0;
   width: 70%;
@@ -602,7 +605,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 400, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
 .find-agent .search-group input[type='text'] {
   background-color: white;
 }
@@ -627,7 +630,7 @@ body {
   color: #52586a;
 }
 
-/* line 409, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 .footer {
   -moz-border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0;
@@ -635,46 +638,46 @@ body {
   padding: 1.5em 0;
   width: 80%;
 }
-/* line 413, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 .footer .concat {
   float: left;
 }
-/* line 416, ../sass/style.scss */
+/* line 419, ../sass/style.scss */
 .footer .icons {
   float: right;
 }
-/* line 419, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .footer .icon-twitter {
   color: #01b4ea;
   font-weight: 400;
   font-size: 1.2em;
 }
-/* line 422, ../sass/style.scss */
+/* line 425, ../sass/style.scss */
 .footer .icon-facebook {
   color: #01b4ea;
   font-weight: 400;
   font-size: 1.2em;
 }
-/* line 425, ../sass/style.scss */
+/* line 428, ../sass/style.scss */
 .footer li {
   float: left;
   padding: 0 10px;
 }
-/* line 429, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .footer a {
   text-decoration: none;
 }
-/* line 431, ../sass/style.scss */
+/* line 434, ../sass/style.scss */
 .footer a:hover {
   text-decoration: underline;
 }
 
-/* line 437, ../sass/style.scss */
+/* line 440, ../sass/style.scss */
 .com_font_style, .header .agent_search .l_text, .header .agent_search .s_text {
   text-align: center;
 }
 
-/* line 441, ../sass/style.scss */
+/* line 444, ../sass/style.scss */
 .com_box_style, .header header button, .trd_part .testimonials, .trd_part .feedback {
   text-shadow: none;
   box-shadow: none;

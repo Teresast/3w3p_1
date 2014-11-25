@@ -196,25 +196,25 @@ body {
   }
 }
 
-.search_suburb {
-  text-align: center;
-  margin: 15px auto 0;
-  .search_bar , .search_button{
-    @extend .com_box_style;
-    border: 0 solid gray;
-  }
-  .search_bar {
-    width: 40%;
-    height: 40px;
-    background-color: rgba(255,255,255,0.5);
-  }
-  .search_button {
-    width: 8%;
-    height: 44px;
-    background-color: lightgreen;
-    @include font_style(white, 200, 1em);
-  }
-}
+// .search_suburb {
+//   text-align: center;
+//   margin: 15px auto 0;
+//   .search_bar , .search_button{
+//     @extend .com_box_style;
+//     border: 0 solid gray;
+//   }
+//   .search_bar {
+//     width: 40%;
+//     height: 40px;
+//     background-color: rgba(255,255,255,0.5);
+//   }
+//   .search_button {
+//     width: 8%;
+//     height: 44px;
+//     background-color: lightgreen;
+//     @include font_style(white, 200, 1em);
+//   }
+// }
 
 .how_it_works {
   @extend .block; 
@@ -417,6 +417,13 @@ body {
     width: 70%;
     text-align: left;
     @include box-sizing(border-box);
+    input[type='text'] {
+      background-color: rgba(lighten(#ffffff, 10%), 1);
+      @include input-placeholder {
+            font-size: 1.1em;
+            color: lighten(#3c404d, 10%);
+        }
+    }
   }
 }
 .footer {

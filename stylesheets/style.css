@@ -297,31 +297,6 @@ body {
   font-size: 10px;
 }
 
-/* line 199, ../sass/style.scss */
-.search_suburb {
-  text-align: center;
-  margin: 15px auto 0;
-}
-/* line 202, ../sass/style.scss */
-.search_suburb .search_bar, .search_suburb .search_button {
-  border: 0 solid gray;
-}
-/* line 206, ../sass/style.scss */
-.search_suburb .search_bar {
-  width: 40%;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-/* line 211, ../sass/style.scss */
-.search_suburb .search_button {
-  width: 8%;
-  height: 44px;
-  background-color: lightgreen;
-  color: white;
-  font-weight: 200;
-  font-size: 1em;
-}
-
 /* line 221, ../sass/style.scss */
 .how_it_works .title {
   width: 100%;
@@ -627,8 +602,32 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* line 420, ../sass/style.scss */
+.find-agent .search-group input[type='text'] {
+  background-color: white;
+}
+/* line 61, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+.find-agent .search-group input[type='text']:-moz-placeholder {
+  font-size: 1.1em;
+  color: #52586a;
+}
+/* line 64, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+.find-agent .search-group input[type='text']::-moz-placeholder {
+  font-size: 1.1em;
+  color: #52586a;
+}
+/* line 67, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+.find-agent .search-group input[type='text']:-ms-input-placeholder {
+  font-size: 1.1em;
+  color: #52586a;
+}
+/* line 56, ../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+.find-agent .search-group input[type='text']::-webkit-input-placeholder {
+  font-size: 1.1em;
+  color: #52586a;
+}
 
-/* line 422, ../sass/style.scss */
+/* line 429, ../sass/style.scss */
 .footer {
   -moz-border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0;
@@ -636,47 +635,47 @@ body {
   padding: 1.5em 0;
   width: 80%;
 }
-/* line 426, ../sass/style.scss */
+/* line 433, ../sass/style.scss */
 .footer .concat {
   float: left;
 }
-/* line 429, ../sass/style.scss */
+/* line 436, ../sass/style.scss */
 .footer .icons {
   float: right;
 }
-/* line 432, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .footer .icon-twitter {
   color: #01b4ea;
   font-weight: 400;
   font-size: 1.2em;
 }
-/* line 435, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .footer .icon-facebook {
   color: #01b4ea;
   font-weight: 400;
   font-size: 1.2em;
 }
-/* line 438, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 .footer li {
   float: left;
   padding: 0 10px;
 }
-/* line 442, ../sass/style.scss */
+/* line 449, ../sass/style.scss */
 .footer a {
   text-decoration: none;
 }
-/* line 444, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 .footer a:hover {
   text-decoration: underline;
 }
 
-/* line 450, ../sass/style.scss */
+/* line 457, ../sass/style.scss */
 .com_font_style, .header .agent_search .l_text, .header .agent_search .s_text {
   text-align: center;
 }
 
-/* line 454, ../sass/style.scss */
-.com_box_style, .header header button, .search_suburb .search_bar, .search_suburb .search_button, .trd_part .testimonials, .trd_part .feedback {
+/* line 461, ../sass/style.scss */
+.com_box_style, .header header button, .trd_part .testimonials, .trd_part .feedback {
   text-shadow: none;
   box-shadow: none;
 }

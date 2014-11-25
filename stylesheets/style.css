@@ -63,7 +63,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 34, ../sass/style.scss */
 .block, .how_it_works, .why_us {
   margin-top: 100px;
   width: 100%;
@@ -72,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-bottom: 1px solid gainsboro;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .dividing_line, .how_it_works ul::before {
   content: "";
   position: absolute;
@@ -81,37 +88,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 149px;
   border-top: 1px solid #ccc;
   width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-/* line 48, ../sass/style.scss */
-.title_style, .how_it_works ul li .item p {
-  margin-top: 10px;
-  color: gray;
+/* line 56, ../sass/style.scss */
+.h3_w, .how_it_works ul li h3, .why_us ul li .big_content {
+  margin-top: 20px;
+  color: #3c404d;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
-/* line 52, ../sass/style.scss */
-.sl_p, .how_it_works ul li p {
-  width: 60%;
+/* line 60, ../sass/style.scss */
+.sl_p, .how_it_works ul li p, .why_us ul li p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 40%;
   color: gray;
   font-weight: 300;
   font-size: 1em;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 body {
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   background-repeat: no-repeat;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .people_list ul {
   top: -75px;
   position: relative;
   width: 80%;
 }
-/* line 68, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .people_list ul li {
   background-color: white;
   -moz-box-sizing: border-box;
@@ -125,41 +138,41 @@ body {
   border-left: 1px solid gainsboro;
   border-bottom: 1px solid gainsboro;
 }
-/* line 78, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .people_list ul li:first-child {
   -moz-border-radius: 5px 0 0 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px 0 0 5px;
 }
-/* line 81, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .people_list ul li:last-child {
   -moz-border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0;
   border-radius: 0 5px 5px 0;
   border-right: 1px solid gainsboro;
 }
-/* line 85, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .people_list ul li h4 {
   margin-top: 40px;
   font-size: 1.5em;
   font-weight: bold;
 }
-/* line 90, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .people_list ul li span {
   display: block;
   margin-top: 20px;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .header {
   background-image: url(/img/back.jpg);
   background-size: cover;
 }
-/* line 101, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .header header {
   margin: 30px 0px 0 1088px;
 }
-/* line 103, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .header header button {
   margin-left: 20px;
   border: 1px solid white;
@@ -170,54 +183,54 @@ body {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 112, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .header header a ~ a {
   margin-left: 10px;
 }
-/* line 117, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .header .agent_search {
   padding-bottom: 300px;
 }
-/* line 119, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .header .agent_search .l_text {
   margin: 266px auto 0;
   color: white;
   font-weight: bold;
   font-size: 20px;
 }
-/* line 124, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .header .agent_search .s_text {
   color: gray;
   font-weight: 400;
   font-size: 10px;
 }
-/* line 129, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .header .agent_search .search_suburb {
   text-align: center;
   margin: 15px auto 0;
 }
-/* line 132, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .header .agent_search .search_suburb .search_bar, .header .agent_search .search_suburb .search_button {
   border: 0 solid gray;
 }
-/* line 136, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .header .agent_search .search_suburb .search_bar {
   width: 40%;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-/* line 141, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .header .agent_search .search_suburb .search_button {
   width: 8%;
   height: 44px;
   background-color: lightgreen;
 }
 
-/* line 153, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .how_it_works .title {
   width: 100%;
 }
-/* line 11, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .how_it_works .title p {
   width: 20%;
   text-transform: uppercase;
@@ -225,7 +238,7 @@ body {
   font-weight: 800;
   font-size: 14px;
 }
-/* line 16, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .how_it_works .title div {
   width: 3%;
   height: 3px;
@@ -237,17 +250,17 @@ body {
   margin-top: 5px;
   margin-bottom: 20px;
 }
-/* line 156, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .how_it_works ul {
   margin-top: 50px;
 }
-/* line 161, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .how_it_works ul li {
   width: 33%;
   float: left;
   position: relative;
 }
-/* line 163, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .how_it_works ul li .item {
   border: 1px solid gainsboro;
   border-radius: 100%;
@@ -255,41 +268,41 @@ body {
   height: 45px;
   background-color: #fff;
 }
-/* line 173, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
+.how_it_works ul li .item p {
+  margin-top: 10px;
+  color: gray;
+  font-weight: 800;
+  font-size: 18px;
+}
+/* line 183, ../sass/style.scss */
 .how_it_works ul li .icon-vcard, .how_it_works ul li .icon-pencil, .how_it_works ul li .icon-users {
   margin-top: 40px;
 }
-/* line 176, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .how_it_works ul li .icon-vcard {
   color: #EAA861;
   font-weight: 800;
   font-size: 4em;
 }
-/* line 179, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .how_it_works ul li .icon-pencil {
   color: #ad9dd3;
   font-weight: 800;
   font-size: 4em;
 }
-/* line 182, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .how_it_works ul li .icon-users {
   color: #4d99cb;
   font-weight: 800;
   font-size: 4em;
 }
-/* line 185, ../sass/style.scss */
-.how_it_works ul li h3 {
-  margin-top: 20px;
-  color: #3c404d;
-  font-weight: 800;
-  font-size: 1.2em;
-}
 
-/* line 198, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .why_us .title {
   width: 100%;
 }
-/* line 11, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
 .why_us .title p {
   width: 20%;
   text-transform: uppercase;
@@ -297,7 +310,7 @@ body {
   font-weight: 800;
   font-size: 14px;
 }
-/* line 16, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 .why_us .title div {
   width: 3%;
   height: 3px;
@@ -309,21 +322,77 @@ body {
   margin-top: 5px;
   margin-bottom: 20px;
 }
+/* line 210, ../sass/style.scss */
+.why_us ul {
+  margin-top: 30px;
+}
+/* line 213, ../sass/style.scss */
+.why_us ul li {
+  width: 50%;
+  float: left;
+  position: relative;
+  margin-top: 30px;
+}
+/* line 216, ../sass/style.scss */
+.why_us ul li .icon {
+  float: left;
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 138px;
+}
+/* line 222, ../sass/style.scss */
+.why_us ul li .icon-checkmark {
+  color: #78be93;
+  font-weight: 800;
+  font-size: 2em;
+}
+/* line 225, ../sass/style.scss */
+.why_us ul li .icon-tag {
+  color: #01b4ea;
+  font-weight: 800;
+  font-size: 2em;
+}
+/* line 228, ../sass/style.scss */
+.why_us ul li .icon-loop {
+  color: #eca95a;
+  font-weight: 800;
+  font-size: 2em;
+}
+/* line 231, ../sass/style.scss */
+.why_us ul li .icon-thumbsup {
+  color: #ed7f5b;
+  font-weight: 800;
+  font-size: 2em;
+}
+/* line 234, ../sass/style.scss */
+.why_us ul li .icon-user {
+  color: #ad9dd3;
+  font-weight: 800;
+  font-size: 2em;
+}
+/* line 237, ../sass/style.scss */
+.why_us ul li .icon-clipboard {
+  color: #f16d7e;
+  font-weight: 800;
+  font-size: 2em;
+}
+/* line 240, ../sass/style.scss */
+.why_us ul li .big_content {
+  width: 40%;
+  text-align: left;
+}
+/* line 245, ../sass/style.scss */
+.why_us ul li p {
+  text-align: left;
+}
 
-/* line 203, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .com_font_style, .header .agent_search .l_text, .header .agent_search .s_text {
   text-align: center;
 }
 
-/* line 207, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .com_box_style, .header header button, .header .agent_search .search_suburb .search_bar, .header .agent_search .search_suburb .search_button {
   text-shadow: none;
   box-shadow: none;
-}
-
-/* line 211, ../sass/style.scss */
-.center, .dividing_line, .how_it_works ul::before, .sl_p, .how_it_works ul li p {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }

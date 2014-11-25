@@ -1,6 +1,14 @@
 @import "compass/reset";
 @import "compass/css3";
 
+@mixin center($location) {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: $location;
+}
+.center {
+  @include center(center);
+}
 @mixin font_style($color, $weight, $size) {
     color: $color;
     font-weight: $weight;
@@ -38,20 +46,20 @@
   top:149px;
   border-top:1px solid #ccc;
   width: 65%;
-  @extend  .center;
+  @include center(center);
 }
 @mixin list_style($width) {
   width: $width;
   float: left;
   position: relative;
 }
-.title_style {
-  margin-top: 10px;
-  @include font_style(gray, 800, 18px);
+.h3_w {
+  margin-top: 20px;
+  @include font_style(#3c404d, 800, 1.2em);
 }
 .sl_p {
-  @extend .center;
-  width: 60%;
+  @include center(center);
+  width: 40%;
   @include font_style(gray, 300, 1em);
 }
 
@@ -167,7 +175,9 @@ body {
         height: 45px;
         background-color: #fff;
         p {
-          @extend .title_style
+          margin-top: 10px;
+          @include font_style(gray, 800, 18px);
+
         }
       }
       .icon-vcard , .icon-pencil , .icon-users{
@@ -183,8 +193,7 @@ body {
           @include font_style(#4d99cb, 800, 4em);
       }
       h3 {
-        margin-top: 20px;
-        @include font_style(#3c404d, 800, 1.2em);
+        @extend .h3_w;
       }
       p {
         @extend .sl_p;
@@ -198,6 +207,47 @@ body {
  .title {
     @include title_word;
   }
+  ul {
+    margin-top: 30px;
+    
+    li {
+      @include list_style(50%);
+      margin-top: 30px;
+      .icon {
+      float: left;
+      position: absolute;
+      margin-top: 24px;
+      margin-left: 138px;
+      }
+      .icon-checkmark {
+          @include font_style(#78be93, 800, 2em);
+      }
+      .icon-tag {
+          @include font_style(#01b4ea, 800, 2em);
+      }
+      .icon-loop {
+          @include font_style(#eca95a, 800, 2em);
+      }
+      .icon-thumbsup {
+          @include font_style(#ed7f5b, 800, 2em);
+      }
+      .icon-user {
+          @include font_style(#ad9dd3, 800, 2em);
+      }
+      .icon-clipboard {
+          @include font_style(#f16d7e, 800, 2em);
+      }
+      .big_content {
+          @extend .h3_w;
+          width: 40%;
+          text-align:left;
+        }
+      p {
+        @extend .sl_p;
+        text-align:left;
+      }
+    }
+  }
 }
 
 .com_font_style {
@@ -208,8 +258,4 @@ body {
     text-shadow: none;
     box-shadow: none;
 }
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+

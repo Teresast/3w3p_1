@@ -251,7 +251,7 @@ body {
 
 /* line 161, ../sass/style.scss */
 .header {
-  background-image: url(/img/back.jpg);
+  background-image: url(./img/back.jpg);
   background-size: cover;
 }
 /* line 164, ../sass/style.scss */
@@ -567,18 +567,18 @@ body {
 }
 /* line 369, ../sass/style.scss */
 .trd_part .menbers li .left_face {
-  background-image: url(/img/lufu_wanted.jpeg);
+  background-image: url(./img/lufu_wanted.jpeg);
   background-size: cover;
 }
 /* line 373, ../sass/style.scss */
 .trd_part .menbers li .mid_face {
-  background-image: url(/img/tong.jpg);
+  background-image: url(./img/tong.jpg);
   background-position: center;
   background-size: cover;
 }
 /* line 378, ../sass/style.scss */
 .trd_part .menbers li .right_face {
-  background-image: url(/img/zoro.jpg);
+  background-image: url(./img/zoro.jpg);
   background-size: cover;
 }
 /* line 383, ../sass/style.scss */
@@ -594,7 +594,7 @@ body {
 /* line 394, ../sass/style.scss */
 .find-agent {
   padding: 80px 0;
-  background-image: url(/img/back.jpg);
+  background-image: url(./img/back.jpg);
   background-size: cover;
   background-position: bottom;
   text-align: center;

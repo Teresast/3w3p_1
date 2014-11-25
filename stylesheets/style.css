@@ -251,7 +251,7 @@ body {
 
 /* line 161, ../sass/style.scss */
 .header {
-  background-image: url(./img/back.jpg);
+  background-image: url(../img/back.jpg);
   background-size: cover;
 }
 /* line 164, ../sass/style.scss */
@@ -558,52 +558,51 @@ body {
 .trd_part .menbers li .face {
   height: 80px;
   width: 80px;
-  background-color: blue;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -moz-border-radius: 80px;
   -webkit-border-radius: 80px;
   border-radius: 80px;
 }
-/* line 369, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .trd_part .menbers li .left_face {
-  background-image: url(./img/lufu_wanted.jpeg);
+  background-image: url(../img/lufu_wanted.jpeg);
   background-size: cover;
 }
-/* line 373, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 .trd_part .menbers li .mid_face {
-  background-image: url(./img/tong.jpg);
+  background-image: url(../img/tong.jpg);
   background-position: center;
   background-size: cover;
 }
-/* line 378, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .trd_part .menbers li .right_face {
-  background-image: url(./img/zoro.jpg);
+  background-image: url(../img/zoro.jpg);
   background-size: cover;
 }
-/* line 383, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 .trd_part .menbers li:hover .toggle {
   visibility: visible;
 }
-/* line 386, ../sass/style.scss */
+/* line 385, ../sass/style.scss */
 .trd_part .menbers li:hover .face {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
 
-/* line 394, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 .find-agent {
   padding: 80px 0;
-  background-image: url(./img/back.jpg);
+  background-image: url(../img/back.jpg);
   background-size: cover;
   background-position: bottom;
   text-align: center;
 }
-/* line 400, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 .find-agent > div {
   width: 80%;
 }
-/* line 403, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 .find-agent label {
   display: block;
   height: 50px;
@@ -618,7 +617,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 415, ../sass/style.scss */
+/* line 414, ../sass/style.scss */
 .find-agent .search-group {
   float: left;
   margin-top: 0;
@@ -629,7 +628,7 @@ body {
   box-sizing: border-box;
 }
 
-/* line 423, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .footer {
   -moz-border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0;
@@ -637,46 +636,46 @@ body {
   padding: 1.5em 0;
   width: 80%;
 }
-/* line 427, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 .footer .concat {
   float: left;
 }
-/* line 430, ../sass/style.scss */
+/* line 429, ../sass/style.scss */
 .footer .icons {
   float: right;
 }
-/* line 433, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .footer .icon-twitter {
   color: #01b4ea;
   font-weight: 400;
   font-size: 1.2em;
 }
-/* line 436, ../sass/style.scss */
+/* line 435, ../sass/style.scss */
 .footer .icon-facebook {
   color: #01b4ea;
   font-weight: 400;
   font-size: 1.2em;
 }
-/* line 439, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .footer li {
   float: left;
   padding: 0 10px;
 }
-/* line 443, ../sass/style.scss */
+/* line 442, ../sass/style.scss */
 .footer a {
   text-decoration: none;
 }
-/* line 445, ../sass/style.scss */
+/* line 444, ../sass/style.scss */
 .footer a:hover {
   text-decoration: underline;
 }
 
-/* line 451, ../sass/style.scss */
+/* line 450, ../sass/style.scss */
 .com_font_style, .header .agent_search .l_text, .header .agent_search .s_text {
   text-align: center;
 }
 
-/* line 455, ../sass/style.scss */
+/* line 454, ../sass/style.scss */
 .com_box_style, .header header button, .search_suburb .search_bar, .search_suburb .search_button, .trd_part .testimonials, .trd_part .feedback {
   text-shadow: none;
   box-shadow: none;

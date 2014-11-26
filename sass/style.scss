@@ -190,7 +190,7 @@ body {
     }
     .s_text{
       @extend .com_font_style;
-      @include font_style(gray, 400, 10px);
+      @include font_style(khaki, 400, 1.1em);
     }
 
   }

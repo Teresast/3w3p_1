@@ -292,9 +292,9 @@ body {
 }
 /* line 191, ../sass/style.scss */
 .header .agent_search .s_text {
-  color: gray;
+  color: khaki;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 1.1em;
 }
 
 /* line 201, ../sass/style.scss */
